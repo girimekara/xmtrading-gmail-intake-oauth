@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>プライバシーポリシー | XMTrading Gmail Intake</title>
+  <meta name="description" content="XMTrading Gmail Intake のプライバシーポリシー">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <div class="card">
+    <h1>プライバシーポリシー</h1>
+    <p>XMTrading Gmail Intake</p>
+  </div>
+</header>
+
+<main>
+  <div class="card">
+    <h2>1. 本アプリについて</h2>
+    <p>
+      XMTrading Gmail Intake（以下「本アプリ」）は、所有者本人が自分の Gmail アカウントで利用する個人用アプリケーションです。
+      一般利用者向けのサービスとして提供するものではありません。
+    </p>
+
+    <h2>2. Google ユーザーデータへのアクセス</h2>
+    <p>
+      本アプリは Google OAuth を利用し、Gmail の読み取り専用スコープ
+      <code>https://www.googleapis.com/auth/gmail.readonly</code> のみを要求します。
+      メールの送信、削除、変更を行う権限は要求しません。
+    </p>
+
+    <h2>3. 取得・利用する情報</h2>
+    <p>本アプリは、所有者本人の Gmail 内で対象条件に一致するメールについて、次の情報を取得・処理する場合があります。</p>
+    <ul>
+      <li>メッセージ本文および MIME データ</li>
+      <li>送信者、受信時刻、Received ヘッダー等のメタデータ</li>
+      <li>メッセージ ID、Gmail history 情報、重複防止用のハッシュ値</li>
+      <li>処理状態、監査・検証用のログ</li>
+    </ul>
+    <p>
+      これらは、対象メールの取得、重複防止、出所確認、分析、監査およびシステム検証のために利用します。
+    </p>
+
+    <h2>4. AI サービスへの送信</h2>
+    <p>
+      対象として選ばれたメール本文・ヘッダー情報・派生データは、自動分析のため OpenAI API に送信される場合があります。
+      一方、Google OAuth の client secret、access token、refresh token その他の認証資格情報は OpenAI API へ送信しません。
+    </p>
+
+    <h2>5. 保存</h2>
+    <p>
+      処理対象データおよび監査証拠は、所有者が管理するローカル環境または所有者が管理する保存先に保持される場合があります。
+      保存は重複防止、再現性、監査および障害調査のために行います。
+    </p>
+
+    <h2>6. 第三者提供・販売</h2>
+    <p>
+      本アプリは、Google ユーザーデータを広告目的で利用せず、販売しません。
+      自動分析に必要な範囲で外部 API へ送信する場合を除き、第三者へ提供することを目的としていません。
+    </p>
+
+    <h2>7. セキュリティ</h2>
+    <p>
+      OAuth 資格情報は分析処理から分離し、認証情報を AI モデルへ渡さない設計を採用します。
+      また、処理の重複防止、監査ログ、SHADOW 運用等の安全策を用います。
+    </p>
+
+    <h2>8. Google API Services User Data Policy</h2>
+    <p>
+      本アプリによる Google API から取得した情報の利用は、Google API Services User Data Policy
+      （Limited Use requirements を含む）への適合を意図しています。
+    </p>
+
+    <h2>9. 変更</h2>
+    <p>本ポリシーは、機能や運用方法の変更に応じて更新する場合があります。</p>
+
+    <p class="small">制定日: 2026-10-01</p>
+  </div>
+</main>
+
+<footer>
+  <a href="/">Home</a> ·
+  <a href="/privacy/">Privacy</a> ·
+  <a href="/terms/">Terms</a>
+</footer>
+</body>
+</html>
