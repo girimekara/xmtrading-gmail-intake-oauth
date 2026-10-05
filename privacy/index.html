@@ -44,8 +44,13 @@
 
     <h2>4. AI サービスへの送信</h2>
     <p>
-      対象として選ばれたメール本文・ヘッダー情報・派生データは、自動分析のため OpenAI API に送信される場合があります。
+      対象として選ばれたメール本文・ヘッダー情報・派生データは、所有者本人向けの自動分析を提供するため、
+      必要な範囲で OpenAI API に送信される場合があります。
       一方、Google OAuth の client secret、access token、refresh token その他の認証資格情報は OpenAI API へ送信しません。
+    </p>
+    <p>
+      本アプリは、Google Workspace API から取得したユーザーデータを、
+      一般化された AI / ML モデルの作成、訓練または改善を目的として利用せず、その目的で第三者へ提供しません。
     </p>
 
     <h2>5. 保存</h2>
@@ -57,7 +62,7 @@
     <h2>6. 第三者提供・販売</h2>
     <p>
       本アプリは、Google ユーザーデータを広告目的で利用せず、販売しません。
-      自動分析に必要な範囲で外部 API へ送信する場合を除き、第三者へ提供することを目的としていません。
+      所有者本人向けの自動分析に必要な範囲で外部 API へ送信する場合を除き、第三者へ提供することを目的としていません。
     </p>
 
     <h2>7. セキュリティ</h2>
@@ -66,16 +71,24 @@
       また、処理の重複防止、監査ログ、SHADOW 運用等の安全策を用います。
     </p>
 
-    <h2>8. Google API Services User Data Policy</h2>
+    <h2>8. Google API Services User Data Policy / Limited Use</h2>
     <p>
-      本アプリによる Google API から取得した情報の利用は、Google API Services User Data Policy
-      （Limited Use requirements を含む）への適合を意図しています。
+      本アプリによる Google Workspace API から取得した生データおよび派生データの利用は、
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>
+      （Limited Use requirements を含む）に従います。
     </p>
 
-    <h2>9. 変更</h2>
+    <h2>9. アクセス権の取消し・データ削除</h2>
+    <p>
+      所有者は Google アカウントの設定から本アプリの OAuth アクセス権を取り消すことができます。
+      アクセス権を取り消した場合、本アプリは新たな Google ユーザーデータを取得できなくなります。
+      所有者が管理する保存先に保持された処理対象データや監査証拠は、必要に応じて所有者が削除します。
+    </p>
+
+    <h2>10. 変更</h2>
     <p>本ポリシーは、機能や運用方法の変更に応じて更新する場合があります。</p>
 
-    <p class="small">制定日: 2026-10-01</p>
+    <p class="small">制定日: 2026-10-01 / 最終更新日: 2026-10-05</p>
   </div>
 </main>
 
